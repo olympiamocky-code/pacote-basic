@@ -1,0 +1,129 @@
+@import url(reset.css);
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(135deg, #89bff6, #ffb3c1); */
+    background-image: linear-gradient(to left, #89bff6, #cfe6ff, #ffd1dc, #ffb3c1);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.painel {
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.748);
+}
+
+.painel h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: var(--font-1);
+    color: #ff4d6d;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.painel h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: var(--font-3);
+    color: var(--cor-4);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.189);
+}
+
+.painel img {
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERY */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .painel {
+        width: 90%;
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    .painel {
+        width: 90%;
+        height: auto;
+    }
+
+    .painel h1 {
+        font-size: 1.5rem;
+    }
+
+    .painel h2 {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .painel img {
+        width: 220px;
+        max-width: 80%;
+    }
+
+    .btns {
+        margin-top: 15px;
+    }
+
+    .botoes .btns button {
+        width: 90px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+
+    .painel {
+        width: 75%;
+        height: auto;
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+    .painel h1 {
+        font-size: 1.5rem;
+    }
+
+    .painel img {
+        width: 180px;
+        max-width: 90%;
+    }
+
+    .btns {
+        margin-top: 20px;
+    }
+
+    .botoes .btns button {
+        width: 80px;
+        height: 40px;
+        font-size: .95rem;
+    }
+}

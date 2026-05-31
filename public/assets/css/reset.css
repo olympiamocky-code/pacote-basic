@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-1: #ffffff;
+    --cor-2: #d2d2d2;
+    --cor-3: #5f5f5f;
+    --cor-4: #000000;
+
+    --cor-5: #ff0000;
+    --cor-6: #dc0000;
+    --cor-7: #BE1E2D;
+    --cor-8: #ff4d6d;
+    --cor-9: #ff758f;
+    --cor-10: #ffb3c1;
+
+    --cor-11: #0f172a;
+    --cor-12: #1e293b;
+    --cor-13: #89bff6;
+
+    --font-1: "Great Vibes", cursive;
+    --font-2: "Playfair Display", serif;
+    --font-3: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btns button {
+    width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--cor-4);
+    font-family: var(--font-3);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-13);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+
+
+}
+
+.btns button:hover {
+    color: var(--cor-4);
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #f60000;
+    text-shadow:
+        0 0 6px rgba(242, 7, 7, 0.377),
+        0 0 12px rgba(137, 191, 246, 0.15);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: var(--font-2);
+      color: #ffffff;
+    text-shadow: 0 0 5px rgba(15, 23, 42, 0.127), 0 0 15px rgba(253, 251, 255, 0.4);
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+}
