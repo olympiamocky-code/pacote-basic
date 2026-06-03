@@ -6,8 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(135deg, #89bff6, #ffb3c1); */
-    background-image: linear-gradient(to left, #89bff6, #cfe6ff, #ffd1dc, #ffb3c1);
+    background: linear-gradient(135deg, #89bff6, #ffb3c1);
+    /* background-image: linear-gradient(to left, #89bff6, #cfe6ff, #ffd1dc, #ffb3c1); */
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
 }
@@ -39,16 +39,16 @@ body {
     font-size: 2.8rem;
     font-weight: 800;
     font-family: var(--font-1);
-    color: #ff4d6d;
-    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-
+    color: #4190df;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, 0.433);
+  
 }
 
 .painel h2 {
     font-size: 1.3rem;
     font-weight: 600;
     font-family: var(--font-3);
-    color: var(--cor-4);
+    color: #ff4d6d;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.189);
 }
 
